@@ -1,5 +1,5 @@
-name: 'Slack Markdown Converter'
-description: "Converts markdown to Slack's mrkdwn"
+name: 'Slackapi Changelog'
+description: "Convert changelog markdown to Slack's mrkdwn"
 inputs:
   text:
     description: 'Markdown text to convert'
