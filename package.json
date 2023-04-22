@@ -2,8 +2,10 @@
   "name": "slackapi-markdown-action",
   "version": "1.0.0",
   "description": "GitHub Action to convert markdown into Slack's mrkdwn.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
+    "build": "rimraf lib && tsc",
+    "package": "rimraf dist && ncc build --license licenses.txt",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,7 +24,13 @@
   },
   "homepage": "https://github.com/peterchanxyz/slack-markdown-action#readme",
   "dependencies": {
-    "@actions/core": "^1.2.4",
+    "@actions/core": "^1.10.0",
     "@tryfabric/mack": "^1.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.13",
+    "@vercel/ncc": "^0.36.1",
+    "rimraf": "^5.0.0",
+    "typescript": "^5.0.4"
   }
 }

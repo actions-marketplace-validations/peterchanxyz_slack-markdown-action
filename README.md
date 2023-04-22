@@ -5,8 +5,9 @@ GitHub Action to convert markdown into Slack's mrkdwn. Basically just a wrapper 
 
 ### Inputs
 
-* `text` - The markdown text to convert.
+* `text` - The title text to show.
+* `changelog` - The changelog markdown text to convert.
 
 ### Outputs
 
-* `text` - The markdown text converted to Slack's mrkdwn format.
+* `payload` - The content payload for slackapi.
