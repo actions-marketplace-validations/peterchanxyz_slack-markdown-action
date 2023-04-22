@@ -1,6 +1,6 @@
 {
   "name": "slackapi-markdown-action",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "GitHub Action to convert markdown into Slack's mrkdwn.",
   "main": "lib/index.js",
   "scripts": {
